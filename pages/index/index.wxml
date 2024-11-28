@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <view class="item" wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index" data-url="{{item.url}}" bind:tap="onItemTap">
+      <view class="item-name">
+        <view class="text">
+          {{index+1}}.{{item.name}}
+        </view>
+        <icon class="icon-small" type="search" size="20"></icon>
+      </view>
+    </view>
+  </view>
+</scroll-view>

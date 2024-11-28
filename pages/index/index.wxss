@@ -1,0 +1,35 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.scrollarea {
+  flex: 1;
+  overflow-y: scroll;
+}
+.container {
+  margin: 20rpx;
+}
+.item-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 20rpx;
+  padding: 0 40rpx;
+  color: #323233;
+  font-weight: 600;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  background: #f7f8fa;
+  border-radius: 200rpx;
+  transition: 0.3s;
+}
+.item-name:hover {
+  background: #eef0f4;
+}
+.icon-small {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,6 @@
+<!--pages/watermark/watermark.wxml-->
+<image src="{{src}}" mode="aspectFit" lazy-load="false" wx:if="{{src}}"></image>
+
+<view class="upload-img" bind:tap="uploadIMG"> + </view>
+
+<canvas canvas-id="myCanvas" style="width: {{canvasWidthValue}}px;height:{{canvasHeightValue}}px;position:fixed;top:1000vh;z-index:-1"></canvas>
