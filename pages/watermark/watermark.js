@@ -39,15 +39,17 @@ Page({
           ctx.fillText(address, 10, res.height - 50); // 地址水印
           ctx.fillText(currentTime, 10, res.height - 20); // 时间水印
           ctx.draw();
-          const temp = await wx.canvasToTempFilePath({
-            canvasId: 'myCanvas',
-          });
-          // **上传水印图片到服务器（真实项目中需要考虑上传后台，还是直传等）**
-          // const result = await request.uploadFile(temp.tempFilePath);
-          this.setData({
-            src: temp.tempFilePath,
-          });
-          wx.hideLoading();
+          setTimeout(async () => {
+            const temp = await wx.canvasToTempFilePath({
+              canvasId: 'myCanvas',
+            });
+            // **上传水印图片到服务器（真实项目中需要考虑上传后台，还是直传等）**
+            // const result = await request.uploadFile(temp.tempFilePath);
+            this.setData({
+              src: temp.tempFilePath,
+            });
+            wx.hideLoading();
+          }, 100);
         } catch (error) {
           console.log('error=>', error);
         }
