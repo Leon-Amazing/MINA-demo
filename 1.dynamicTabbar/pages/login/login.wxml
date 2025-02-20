@@ -1,0 +1,4 @@
+<view class="wrap">
+  <button type="default" data-type="1" bind:tap="handleLogin">普通用户</button>
+  <button type="primary" style="margin-top:50rpx" data-type="2" bind:tap="handleLogin">管理员</button>
+</view>
