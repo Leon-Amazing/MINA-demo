@@ -7,3 +7,9 @@
 ### 2.watermark
 
 地址和时间水印
+
+### 3.AI-EventStream
+
+AI获取数据流并且展示
+
+![](./imgs/demo.gif)
