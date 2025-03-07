@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="item">
+        <view class="item-name">
+            <view class="text" bind:tap="handleText">
+                AI获取流数据
+            </view>
+        </view>
+    </view>
+
+    <view>
+        <rich-text nodes="{{text}}"></rich-text>
+    </view>
+</view>
